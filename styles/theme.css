@@ -1,0 +1,44 @@
+:root {
+	--paper: #f3f2ec;
+	--surface: #fbfaf6;
+	--ink: #202b2a;
+	--muted: #737c77;
+	--line: #dedfd8;
+	--green: #39665a;
+	--green-dark: #264a43;
+	--clay: #bd694b;
+	--sun: #d8a43b;
+	--mono: "SFMono-Regular", Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+
+button, input, select { font: inherit; }
+
+a {
+	color: var(--green);
+	text-decoration: none;
+}
+
+a:hover { color: var(--green-dark); }
+
+tr th, tr td { border: 1px solid #e6e6e6; }
+
+tr th { background-color: #f5f5f5; }
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible {
+	outline: 2px solid var(--clay);
+	outline-offset: 3px;
+}
